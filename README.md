@@ -99,6 +99,8 @@ Position the watch as part of a socially assistive system that improves *when* a
 - **Distributed embodiment:** watch provides context; an embodied agent (phone/tablet avatar or robot) delivers social assistance.
 - **Evaluation beyond accuracy:** trust, workload, perceived usefulness, and failure handling under uncertainty.
 
+For a ready-to-write ICSR paper outline, figure plan, and results table templates, see `docs/ICSR2026_PAPER_BLUEPRINT.md`.
+
 ## Credits & Attribution
 
 - **UCI HAR Dataset** (downloaded by default): “Human Activity Recognition Using Smartphones Data Set”, UCI Machine Learning Repository.  
