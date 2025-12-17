@@ -12,10 +12,10 @@ venv/
 
 notebooks/.ipynb_checkpoints/
 
-# Data / artifacts
-data/
-outputs/
-models/
+# Data / artifacts (repo root only)
+/data/
+/outputs/
+/models/
 *.zip
 *.pt
 *.pth
