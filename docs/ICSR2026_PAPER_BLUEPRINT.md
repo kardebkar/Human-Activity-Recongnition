@@ -223,3 +223,10 @@ If you need a tight scope:
 - One Unity scene with 3 checkpoint types and an NPC interaction.
 - Two conditions: manual vs activity-driven (add transparency as ablation if time).
 
+## 8) Note on the Dataverse Apple Watch / Fitbit CSVs (Optional Starting Point)
+
+If you are using engineered, tabular CSVs like `aw_fb_data.csv` / `data_for_weka_aw.csv` / `data_for_weka_fb.csv`:
+
+- These files typically contain labels such as `Lying`, `Sitting`, `Self Pace walk`, and `Running 3/5/7 METs` (no explicit `Standing`).
+- They are useful for a quick baseline and for mapping to avatar states (lie/sit/walk/run speeds), but they are **not raw IMU time-series**.
+- For a “stand vs sit” interaction (and for robust wrist-based HRI claims), plan to collect a small wrist IMU dataset with an explicit `Standing` label and subject-independent evaluation.
