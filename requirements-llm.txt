@@ -1,0 +1,15 @@
+# Optional: LLM fine-tuning (best on Colab/Linux + NVIDIA GPU)
+accelerate
+bitsandbytes
+datasets
+peft
+transformers
+trl
+kagglehub
+
+# Unsloth (GPU-focused; install from git)
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+
+# Unsloth recommends a compatible xformers version
+xformers<0.0.27
+

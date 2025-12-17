@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+.venv/
+venv/
+
+.cache/
+
+notebooks/.ipynb_checkpoints/
+
+# Data / artifacts
+data/
+outputs/
+models/
+*.zip
+*.pt
+*.pth
+*.ckpt

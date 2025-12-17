@@ -1,0 +1,11 @@
+# Core scientific stack
+numpy
+pandas
+scikit-learn
+tqdm
+
+# Plotting (optional but used by the scripts)
+matplotlib
+seaborn
+
+# Note: PyTorch is optional for the transformer model. See `requirements-torch.txt`.

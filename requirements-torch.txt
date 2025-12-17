@@ -1,0 +1,8 @@
+# Optional: PyTorch for the transformer classifier.
+#
+# Install `requirements.txt` first (numpy/pandas/sklearn/etc), then install torch:
+#   pip install -r requirements-torch.txt
+#
+# On some platforms you may need to follow official PyTorch install instructions instead.
+torch
+
