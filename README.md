@@ -67,6 +67,25 @@ python scripts/train_activity_model.py --dataset synthetic --model transformer -
 python scripts/predict_activity.py --model-path models/uci_har_transformer.pt --dataset uci_har --n 5
 ```
 
+## External Wearable CSVs (Apple Watch / Fitbit)
+
+If you have the Dataverse CSVs you mentioned (e.g. `data_for_weka_aw.csv`, `data_for_weka_fb.csv`, `aw_fb_data.csv`), you can train a baseline on them without copying the data into this repo:
+
+```bash
+python scripts/train_aw_fb_tabular.py --csv-path /path/to/aw_fb_data.csv
+```
+
+Filter to a single device (combined CSV only):
+
+```bash
+python scripts/train_aw_fb_tabular.py --csv-path /path/to/aw_fb_data.csv --device "apple watch"
+python scripts/train_aw_fb_tabular.py --csv-path /path/to/aw_fb_data.csv --device "fitbit"
+```
+
+Notes:
+- These CSVs contain **tabular, engineered features** (steps, heart rate, calories, distance, entropy/correlation features) and 6 labels: `Lying`, `Sitting`, `Self Pace walk`, and `Running 3/5/7 METs`.
+- There is **no explicit “Standing”** label in these files; for a stand/walk/stairs demo you’ll likely collect wrist IMU data for standing (or treat “stationary” as one class).
+
 ## Optional: LLM Fine-Tuning (Colab/GPU)
 
 This is intended for Colab/Linux with CUDA:
