@@ -63,6 +63,25 @@ This writes:
 
 **Why this matters:** results look strong under a random split, but drop substantially under a group split (proxy subject-independent), indicating leakage risk when evaluating “minutes” rather than “participants”.
 
+## Committed Figures (for GitHub viewing)
+
+These are sample outputs committed for convenience:
+
+- Apple Watch (6-class, random split): `docs/assets/aw_fb/aw_6_class_random_rf_overview.png`
+- Apple Watch (6-class, group split): `docs/assets/aw_fb/aw_6_class_group_rf_overview.png`
+- Fitbit (6-class, group split): `docs/assets/aw_fb/fb_6_class_group_extra_trees_overview.png`
+- Combined (6-class, group split): `docs/assets/aw_fb/combined_6_class_group_rf_overview.png`
+
+The full metric dump for this run is committed at `docs/assets/aw_fb/aw_fb_dataset_analysis_seed42_test0.2.json`.
+
+![Apple Watch 6-class random split](assets/aw_fb/aw_6_class_random_rf_overview.png)
+
+![Apple Watch 6-class group split](assets/aw_fb/aw_6_class_group_rf_overview.png)
+
+![Fitbit 6-class group split](assets/aw_fb/fb_6_class_group_extra_trees_overview.png)
+
+![Combined 6-class group split](assets/aw_fb/combined_6_class_group_rf_overview.png)
+
 ### Apple Watch (`data_for_weka_aw.csv`)
 
 - 6-class **random split** (ExtraTrees): **81.83%** accuracy
@@ -108,4 +127,3 @@ For a publishable interactive demo, the most robust path is:
 1. **Pick one device** (Apple Watch) and build a stable, uncertainty-aware controller (see `docs/ICSR2026_PAPER_BLUEPRINT.md`).
 2. Use a **4-state MVP** first (`LIE/SIT/WALK/RUN/UNKNOWN`) and add `STANDING/STAIRS` only once you have a dataset that labels them.
 3. If you want `Standing`, collect a small IMU dataset with explicit labels (or fuse additional signals like Apple’s “Stand” ring / altimeter / phone pose).
-

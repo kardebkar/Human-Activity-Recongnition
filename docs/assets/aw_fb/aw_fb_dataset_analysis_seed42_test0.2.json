@@ -1,0 +1,1135 @@
+{
+  "seed": 42,
+  "test_size": 0.2,
+  "runs": [
+    {
+      "dataset": "aw",
+      "overview": {
+        "n_samples": 3656,
+        "n_features": 12,
+        "label_counts": {
+          "Lying": 787,
+          "Running 7 METs": 613,
+          "Running 5 METs": 603,
+          "Running 3 METs": 572,
+          "Sitting": 552,
+          "Self Pace walk": 529
+        },
+        "group_stats": {
+          "n_groups": 49,
+          "min": 64,
+          "max": 89,
+          "median": 74.0
+        },
+        "nan_values": 0,
+        "zero_variance_features": []
+      },
+      "experiments": [
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.21584699453551912,
+            "macro_f1": 0.05917602996254682,
+            "weighted_f1": 0.07663780929575735,
+            "macro_recall": 0.16666666666666666,
+            "macro_precision": 0.03597449908925319
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.3524590163934426,
+            "macro_f1": 0.333019721042072,
+            "weighted_f1": 0.34023945599807526,
+            "macro_recall": 0.3407772874259524,
+            "macro_precision": 0.3463555148761943
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.5997267759562842,
+            "macro_f1": 0.6016921323344816,
+            "weighted_f1": 0.599843387943887,
+            "macro_recall": 0.6016068368455249,
+            "macro_precision": 0.6026993174725046
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8292349726775956,
+            "macro_f1": 0.8309113212508485,
+            "weighted_f1": 0.8293913694492564,
+            "macro_recall": 0.8324197708025132,
+            "macro_precision": 0.8301514103964194
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.8183060109289617,
+            "macro_f1": 0.8201211801253221,
+            "weighted_f1": 0.8178041974981655,
+            "macro_recall": 0.8225736454176835,
+            "macro_precision": 0.8186407725256085
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.21390374331550802,
+            "macro_f1": 0.05873715124816447,
+            "weighted_f1": 0.07538457914202927,
+            "macro_recall": 0.16666666666666666,
+            "macro_precision": 0.035650623885918005
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.39037433155080214,
+            "macro_f1": 0.36890144522788754,
+            "weighted_f1": 0.3737426102958455,
+            "macro_recall": 0.3804588944607185,
+            "macro_precision": 0.400063793757578
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.44786096256684493,
+            "macro_f1": 0.45124191205818903,
+            "weighted_f1": 0.45108995127398815,
+            "macro_recall": 0.44319649483392354,
+            "macro_precision": 0.47783298865327567
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.5267379679144385,
+            "macro_f1": 0.5199895193954129,
+            "weighted_f1": 0.52442873579056,
+            "macro_recall": 0.512345147222469,
+            "macro_precision": 0.5642562912845142
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.5254010695187166,
+            "macro_f1": 0.5304978042996051,
+            "weighted_f1": 0.5296968313091506,
+            "macro_recall": 0.5158980450965867,
+            "macro_precision": 0.5780700707101465
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.4890710382513661,
+            "macro_f1": 0.16422018348623854,
+            "weighted_f1": 0.3212613425577781,
+            "macro_recall": 0.25,
+            "macro_precision": 0.12226775956284153
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.5286885245901639,
+            "macro_f1": 0.3442335184181007,
+            "weighted_f1": 0.45982806108139823,
+            "macro_recall": 0.35720442291389476,
+            "macro_precision": 0.44680531522871203
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.662568306010929,
+            "macro_f1": 0.5934221462814193,
+            "weighted_f1": 0.6452236074864199,
+            "macro_recall": 0.5736080279682584,
+            "macro_precision": 0.6386742702967868
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8319672131147541,
+            "macro_f1": 0.8004640483234056,
+            "weighted_f1": 0.8276680216166887,
+            "macro_recall": 0.7843166252699018,
+            "macro_precision": 0.8223154493263184
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.8401639344262295,
+            "macro_f1": 0.8131566972735943,
+            "weighted_f1": 0.8369130371095799,
+            "macro_recall": 0.800171693370481,
+            "macro_precision": 0.8302264884055812
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.4852941176470588,
+            "macro_f1": 0.16336633663366337,
+            "weighted_f1": 0.3171228887594642,
+            "macro_recall": 0.25,
+            "macro_precision": 0.1213235294117647
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.536096256684492,
+            "macro_f1": 0.3001389803658173,
+            "weighted_f1": 0.43278033056432735,
+            "macro_recall": 0.330951929638335,
+            "macro_precision": 0.4871922059422059
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.606951871657754,
+            "macro_f1": 0.5150274191552607,
+            "weighted_f1": 0.5869723936958418,
+            "macro_recall": 0.49994396371976646,
+            "macro_precision": 0.56365575811636
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.6149732620320856,
+            "macro_f1": 0.5194944574449241,
+            "weighted_f1": 0.5953249437986914,
+            "macro_recall": 0.5067972357886187,
+            "macro_precision": 0.5815075361614197
+          }
+        },
+        {
+          "dataset": "aw",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.6336898395721925,
+            "macro_f1": 0.5297019699780612,
+            "weighted_f1": 0.6043943053725751,
+            "macro_recall": 0.5024968928195126,
+            "macro_precision": 0.6903205602667097
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "fb",
+      "overview": {
+        "n_samples": 2608,
+        "n_features": 12,
+        "label_counts": {
+          "Lying": 592,
+          "Running 7 METs": 501,
+          "Running 5 METs": 399,
+          "Sitting": 378,
+          "Running 3 METs": 378,
+          "Self Pace walk": 360
+        },
+        "group_stats": {
+          "n_groups": 49,
+          "min": 9,
+          "max": 89,
+          "median": 72.0
+        },
+        "nan_values": 0,
+        "zero_variance_features": []
+      },
+      "experiments": [
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.2260536398467433,
+            "macro_f1": 0.06145833333333334,
+            "weighted_f1": 0.0833572796934866,
+            "macro_recall": 0.16666666666666666,
+            "macro_precision": 0.037675606641123884
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.4846743295019157,
+            "macro_f1": 0.4096272273485484,
+            "weighted_f1": 0.43594430081755614,
+            "macro_recall": 0.4455014124293785,
+            "macro_precision": 0.413777511269604
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.6915708812260536,
+            "macro_f1": 0.6633753159441689,
+            "weighted_f1": 0.6680247766683834,
+            "macro_recall": 0.6767051574321868,
+            "macro_precision": 0.7121503584110983
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.9042145593869731,
+            "macro_f1": 0.904458114546963,
+            "weighted_f1": 0.9042379891003788,
+            "macro_recall": 0.9064386543099746,
+            "macro_precision": 0.9030654713464181
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.9099616858237548,
+            "macro_f1": 0.9098992461846921,
+            "weighted_f1": 0.909807309255853,
+            "macro_recall": 0.9117107328113127,
+            "macro_precision": 0.9084040593909015
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.22905027932960895,
+            "macro_f1": 0.062121212121212126,
+            "weighted_f1": 0.08537328593194515,
+            "macro_recall": 0.16666666666666666,
+            "macro_precision": 0.038175046554934824
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.44878957169459965,
+            "macro_f1": 0.3598977646379656,
+            "weighted_f1": 0.3887559037376461,
+            "macro_recall": 0.4003967442993508,
+            "macro_precision": 0.3985894885377612
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.5735567970204841,
+            "macro_f1": 0.525688153907204,
+            "weighted_f1": 0.531148162846522,
+            "macro_recall": 0.5485845238129163,
+            "macro_precision": 0.5269763390731133
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8044692737430168,
+            "macro_f1": 0.8042677455270929,
+            "weighted_f1": 0.8045900625090117,
+            "macro_recall": 0.7952434753328171,
+            "macro_precision": 0.8224491472778043
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.819366852886406,
+            "macro_f1": 0.8197398064624836,
+            "weighted_f1": 0.8203703219985617,
+            "macro_recall": 0.8088877400709968,
+            "macro_precision": 0.8407183966078501
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.4904214559386973,
+            "macro_f1": 0.16452442159383032,
+            "weighted_f1": 0.3227452255020733,
+            "macro_recall": 0.25,
+            "macro_precision": 0.12260536398467432
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.5881226053639846,
+            "macro_f1": 0.3493004663557628,
+            "weighted_f1": 0.5035891780958288,
+            "macro_recall": 0.4165372520505005,
+            "macro_precision": 0.407593909982445
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.7337164750957854,
+            "macro_f1": 0.6324275922490208,
+            "weighted_f1": 0.7079533311060404,
+            "macro_recall": 0.6494679771905045,
+            "macro_precision": 0.7557083236949649
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8869731800766284,
+            "macro_f1": 0.8648237072380719,
+            "weighted_f1": 0.885688360605559,
+            "macro_recall": 0.8528946865088215,
+            "macro_precision": 0.879870275185467
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.8984674329501916,
+            "macro_f1": 0.8796763896317612,
+            "weighted_f1": 0.8981913414861019,
+            "macro_recall": 0.8741391072579047,
+            "macro_precision": 0.8860919906914858
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.4748603351955307,
+            "macro_f1": 0.16098484848484848,
+            "weighted_f1": 0.30578127645166747,
+            "macro_recall": 0.25,
+            "macro_precision": 0.11871508379888268
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.5512104283054003,
+            "macro_f1": 0.31965352449223416,
+            "weighted_f1": 0.4631131401720696,
+            "macro_recall": 0.40487804878048783,
+            "macro_precision": 0.2734728387233143
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.6741154562383612,
+            "macro_f1": 0.5389775756562581,
+            "weighted_f1": 0.6290207454190725,
+            "macro_recall": 0.5799821918497823,
+            "macro_precision": 0.5259872641905651
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8212290502793296,
+            "macro_f1": 0.8116858857636577,
+            "weighted_f1": 0.8227545482309448,
+            "macro_recall": 0.7987401163970236,
+            "macro_precision": 0.8426932888019784
+          }
+        },
+        {
+          "dataset": "fb",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.8305400372439479,
+            "macro_f1": 0.8247586766608506,
+            "weighted_f1": 0.8333957895228238,
+            "macro_recall": 0.8056737332172457,
+            "macro_precision": 0.8681732775856282
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "combined",
+      "overview": {
+        "n_samples": 6264,
+        "n_features": 12,
+        "label_counts": {
+          "Lying": 1379,
+          "Running 7 METs": 1114,
+          "Running 5 METs": 1002,
+          "Running 3 METs": 950,
+          "Sitting": 930,
+          "Self Pace walk": 889
+        },
+        "group_stats": {
+          "n_groups": 49,
+          "min": 77,
+          "max": 178,
+          "median": 144.0
+        },
+        "nan_values": 0,
+        "zero_variance_features": [],
+        "device_shift": {
+          "devices": [
+            "apple watch",
+            "fitbit"
+          ],
+          "feature_mean_std": {
+            "apple watch": {
+              "mean": {
+                "steps": 180.24624633789062,
+                "hear_rate": 91.25077819824219,
+                "calories": 5.783859729766846,
+                "distance": 0.0842355489730835,
+                "entropy_heart": 6.123692989349365,
+                "entropy_setps": 6.053435325622559,
+                "resting_heart": 68.37448120117188,
+                "corr_heart_steps": 0.006166535895317793,
+                "norm_heart": 22.87615203857422,
+                "intensity_karvonen": 0.19144301116466522,
+                "sd_norm_heart": 8.846975326538086,
+                "steps_times_distance": 39.661861419677734
+              },
+              "std": {
+                "steps": 269.4010009765625,
+                "hear_rate": 26.749492645263672,
+                "calories": 7.277491092681885,
+                "distance": 0.13688626885414124,
+                "entropy_heart": 0.2156754434108734,
+                "entropy_setps": 0.17678043246269226,
+                "resting_heart": 11.927902221679688,
+                "corr_heart_steps": 0.7411425709724426,
+                "norm_heart": 23.964303970336914,
+                "intensity_karvonen": 0.2050786167383194,
+                "sd_norm_heart": 10.075348854064941,
+                "steps_times_distance": 112.39434814453125
+              }
+            },
+            "fitbit": {
+              "mean": {
+                "steps": 10.474365234375,
+                "hear_rate": 78.98115539550781,
+                "calories": 38.66008377075195,
+                "distance": 33.10550308227539,
+                "entropy_heart": 5.899252891540527,
+                "entropy_setps": 5.300562858581543,
+                "resting_heart": 62.35945129394531,
+                "corr_heart_steps": 0.72739177942276,
+                "norm_heart": 16.622255325317383,
+                "intensity_karvonen": 0.10506433248519897,
+                "sd_norm_heart": 7.078907012939453,
+                "steps_times_distance": 1361.5694580078125
+              },
+              "std": {
+                "steps": 25.338918685913086,
+                "hear_rate": 29.66499137878418,
+                "calories": 32.95411682128906,
+                "distance": 66.57424926757812,
+                "entropy_heart": 1.1458107233047485,
+                "entropy_setps": 1.8482182025909424,
+                "resting_heart": 29.30946922302246,
+                "corr_heart_steps": 0.6085395812988281,
+                "norm_heart": 33.27775192260742,
+                "intensity_karvonen": 0.2086348533630371,
+                "sd_norm_heart": 15.271162986755371,
+                "steps_times_distance": 6214.65966796875
+              }
+            }
+          },
+          "top_shift_features": [
+            {
+              "feature": "calories",
+              "score": 1.3776767449907212,
+              "mean_a": 5.783859729766846,
+              "mean_b": 38.66008377075195
+            },
+            {
+              "feature": "corr_heart_steps",
+              "score": 1.0636124909758626,
+              "mean_a": 0.006166535895317793,
+              "mean_b": 0.72739177942276
+            },
+            {
+              "feature": "steps",
+              "score": 0.8872969328010439,
+              "mean_a": 180.24624633789062,
+              "mean_b": 10.474365234375
+            },
+            {
+              "feature": "distance",
+              "score": 0.7014577887213771,
+              "mean_a": 0.0842355489730835,
+              "mean_b": 33.10550308227539
+            },
+            {
+              "feature": "entropy_setps",
+              "score": 0.5734632290237658,
+              "mean_a": 6.053435325622559,
+              "mean_b": 5.300562858581543
+            },
+            {
+              "feature": "hear_rate",
+              "score": 0.43440158290322173,
+              "mean_a": 91.25077819824219,
+              "mean_b": 78.98115539550781
+            },
+            {
+              "feature": "intensity_karvonen",
+              "score": 0.417561882149802,
+              "mean_a": 0.19144301116466522,
+              "mean_b": 0.10506433248519897
+            },
+            {
+              "feature": "steps_times_distance",
+              "score": 0.3007653024509226,
+              "mean_a": 39.661861419677734,
+              "mean_b": 1361.5694580078125
+            }
+          ]
+        }
+      },
+      "experiments": [
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.2202713487629689,
+            "macro_f1": 0.060170045781556575,
+            "weighted_f1": 0.07952242283659831,
+            "macro_recall": 0.16666666666666666,
+            "macro_precision": 0.03671189146049481
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.3240223463687151,
+            "macro_f1": 0.2676228999280551,
+            "weighted_f1": 0.2868943572047239,
+            "macro_recall": 0.2902075455782209,
+            "macro_precision": 0.2917574761276471
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.5179569034317638,
+            "macro_f1": 0.4944725229998239,
+            "weighted_f1": 0.5067812343130856,
+            "macro_recall": 0.49897119307072185,
+            "macro_precision": 0.519945234692533
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8515562649640862,
+            "macro_f1": 0.8507764863187318,
+            "weighted_f1": 0.8516493266271093,
+            "macro_recall": 0.8517572531691955,
+            "macro_precision": 0.8499459272810057
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "random",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.8619313647246608,
+            "macro_f1": 0.8618483539145133,
+            "weighted_f1": 0.861789667520194,
+            "macro_recall": 0.8621344367668077,
+            "macro_precision": 0.8617357881185309
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.22023346303501945,
+            "macro_f1": 0.060161564625850344,
+            "weighted_f1": 0.07949753831493687,
+            "macro_recall": 0.16666666666666666,
+            "macro_precision": 0.036705577172503244
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.3299610894941634,
+            "macro_f1": 0.26121762468090753,
+            "weighted_f1": 0.27970222256263,
+            "macro_recall": 0.2936379537473568,
+            "macro_precision": 0.2992196085833683
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.45603112840466925,
+            "macro_f1": 0.42583141648438366,
+            "weighted_f1": 0.4341408502457004,
+            "macro_recall": 0.4381598452252569,
+            "macro_precision": 0.488803119181434
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.6521400778210117,
+            "macro_f1": 0.6486406654238872,
+            "weighted_f1": 0.6521034915882759,
+            "macro_recall": 0.6391553157628952,
+            "macro_precision": 0.6772286060949502
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "6_class",
+          "split": "group",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.6466926070038911,
+            "macro_f1": 0.6500240850763616,
+            "weighted_f1": 0.6499191135183051,
+            "macro_recall": 0.6350732134458833,
+            "macro_precision": 0.6891439405352541
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.48922585794094176,
+            "macro_f1": 0.1642550911039657,
+            "weighted_f1": 0.32143135146602064,
+            "macro_recall": 0.25,
+            "macro_precision": 0.12230646448523544
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.5506783719074222,
+            "macro_f1": 0.300345169530688,
+            "weighted_f1": 0.451590530256299,
+            "macro_recall": 0.3511190131422182,
+            "macro_precision": 0.347132078901918
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.641660015961692,
+            "macro_f1": 0.5015928495878622,
+            "weighted_f1": 0.5991069475504462,
+            "macro_recall": 0.4964935874162363,
+            "macro_precision": 0.6179237547967109
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.8778930566640064,
+            "macro_f1": 0.8564884380444535,
+            "weighted_f1": 0.8765500414779919,
+            "macro_recall": 0.8463361659880013,
+            "macro_precision": 0.8680281356692576
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "random",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.8858739026336792,
+            "macro_f1": 0.867238964744249,
+            "weighted_f1": 0.8845389837836392,
+            "macro_recall": 0.853840558887063,
+            "macro_precision": 0.8827174631686209
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "dummy",
+          "metrics": {
+            "accuracy": 0.48093385214007783,
+            "macro_f1": 0.162375197057278,
+            "weighted_f1": 0.3123669160510437,
+            "macro_recall": 0.25,
+            "macro_precision": 0.12023346303501946
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.5159533073929962,
+            "macro_f1": 0.28242308659569115,
+            "weighted_f1": 0.4207263142203563,
+            "macro_recall": 0.336202213912427,
+            "macro_precision": 0.2459869107065369
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "svm_rbf",
+          "metrics": {
+            "accuracy": 0.5595330739299611,
+            "macro_f1": 0.3730403417464954,
+            "weighted_f1": 0.4934958150417235,
+            "macro_recall": 0.4047076329166477,
+            "macro_precision": 0.5764188297083034
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.7229571984435798,
+            "macro_f1": 0.6673604257885966,
+            "weighted_f1": 0.7125154923278337,
+            "macro_recall": 0.637495702000742,
+            "macro_precision": 0.7421421436243647
+          }
+        },
+        {
+          "dataset": "combined",
+          "label_set": "4_class_collapsed",
+          "split": "group",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.7252918287937743,
+            "macro_f1": 0.6731552774119518,
+            "weighted_f1": 0.7164082816956515,
+            "macro_recall": 0.6386399078388004,
+            "macro_precision": 0.770714788257696
+          }
+        },
+        {
+          "dataset": "combined:apple watch\u2192fitbit",
+          "label_set": "6_class",
+          "split": "cross_device",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.15950920245398773,
+            "macro_f1": 0.0668102786743997,
+            "weighted_f1": 0.07489514944519342,
+            "macro_recall": 0.13992009724295154,
+            "macro_precision": 0.11848957096132286
+          }
+        },
+        {
+          "dataset": "combined:apple watch\u2192fitbit",
+          "label_set": "6_class",
+          "split": "cross_device",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.17599693251533743,
+            "macro_f1": 0.11849710842727205,
+            "weighted_f1": 0.13251017680064606,
+            "macro_recall": 0.15323826886556688,
+            "macro_precision": 0.1913043709580662
+          }
+        },
+        {
+          "dataset": "combined:apple watch\u2192fitbit",
+          "label_set": "6_class",
+          "split": "cross_device",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.18673312883435583,
+            "macro_f1": 0.11890845993652081,
+            "weighted_f1": 0.13448299818511003,
+            "macro_recall": 0.1614910356118729,
+            "macro_precision": 0.26461344961078404
+          }
+        },
+        {
+          "dataset": "combined:fitbit\u2192apple watch",
+          "label_set": "6_class",
+          "split": "cross_device",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.175054704595186,
+            "macro_f1": 0.10618072694491952,
+            "weighted_f1": 0.1156220113633329,
+            "macro_recall": 0.16524352619373794,
+            "macro_precision": 0.08482216258039559
+          }
+        },
+        {
+          "dataset": "combined:fitbit\u2192apple watch",
+          "label_set": "6_class",
+          "split": "cross_device",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.19009846827133478,
+            "macro_f1": 0.10176998351299606,
+            "weighted_f1": 0.11404381685836033,
+            "macro_recall": 0.15617045730574086,
+            "macro_precision": 0.2050572326609459
+          }
+        },
+        {
+          "dataset": "combined:fitbit\u2192apple watch",
+          "label_set": "6_class",
+          "split": "cross_device",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.2289387308533917,
+            "macro_f1": 0.1223008567360005,
+            "weighted_f1": 0.13495567357816116,
+            "macro_recall": 0.18831211874989864,
+            "macro_precision": 0.2127373950750453
+          }
+        },
+        {
+          "dataset": "combined:apple watch\u2192fitbit",
+          "label_set": "4_class_collapsed",
+          "split": "cross_device",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.1464723926380368,
+            "macro_f1": 0.08303384644500543,
+            "weighted_f1": 0.05238898955817536,
+            "macro_recall": 0.24874651437151435,
+            "macro_precision": 0.13937980402511296
+          }
+        },
+        {
+          "dataset": "combined:apple watch\u2192fitbit",
+          "label_set": "4_class_collapsed",
+          "split": "cross_device",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.4647239263803681,
+            "macro_f1": 0.22806137388924858,
+            "weighted_f1": 0.3660428487687497,
+            "macro_recall": 0.2671596395187944,
+            "macro_precision": 0.30418559226443304
+          }
+        },
+        {
+          "dataset": "combined:apple watch\u2192fitbit",
+          "label_set": "4_class_collapsed",
+          "split": "cross_device",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.473159509202454,
+            "macro_f1": 0.20950335830534744,
+            "weighted_f1": 0.356284252654234,
+            "macro_recall": 0.2606729277063784,
+            "macro_precision": 0.22707087928550027
+          }
+        },
+        {
+          "dataset": "combined:fitbit\u2192apple watch",
+          "label_set": "4_class_collapsed",
+          "split": "cross_device",
+          "model": "logreg",
+          "metrics": {
+            "accuracy": 0.162746170678337,
+            "macro_f1": 0.14038243865576294,
+            "weighted_f1": 0.11138198879603763,
+            "macro_recall": 0.21374502239782944,
+            "macro_precision": 0.21397710453947555
+          }
+        },
+        {
+          "dataset": "combined:fitbit\u2192apple watch",
+          "label_set": "4_class_collapsed",
+          "split": "cross_device",
+          "model": "rf",
+          "metrics": {
+            "accuracy": 0.28801969365426694,
+            "macro_f1": 0.19615815157919503,
+            "weighted_f1": 0.25494710635918766,
+            "macro_recall": 0.2519260624418054,
+            "macro_precision": 0.3208763532149026
+          }
+        },
+        {
+          "dataset": "combined:fitbit\u2192apple watch",
+          "label_set": "4_class_collapsed",
+          "split": "cross_device",
+          "model": "extra_trees",
+          "metrics": {
+            "accuracy": 0.31291028446389496,
+            "macro_f1": 0.21090594636298632,
+            "weighted_f1": 0.28057278647787665,
+            "macro_recall": 0.26599758071061036,
+            "macro_precision": 0.37249285078676037
+          }
+        }
+      ]
+    }
+  ]
+}
