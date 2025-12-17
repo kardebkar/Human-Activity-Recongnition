@@ -12,6 +12,7 @@ Artifacts are written to `data/`, `outputs/`, and `models/` (all `.gitignore`d).
 - `har/train/mlp.py`: scikit-learn baseline training
 - `har/train/torch_trainer.py`: PyTorch training loop
 - `scripts/analyze_uci_har.py`: baseline analysis + overview plot
+- `scripts/analyze_aw_fb_dataset.py`: full analysis for Dataverse Apple Watch / Fitbit CSVs (random vs group splits)
 - `scripts/train_activity_model.py`: train MLP or PyTorch model
 - `scripts/predict_activity.py`: run inference with the saved PyTorch model
 
@@ -75,6 +76,12 @@ If you have the Dataverse CSVs you mentioned (e.g. `data_for_weka_aw.csv`, `data
 python scripts/train_aw_fb_tabular.py --csv-path /path/to/aw_fb_data.csv
 ```
 
+Dataset analysis (recommended before modeling):
+
+```bash
+python scripts/analyze_aw_fb_dataset.py --dataverse-dir /path/to/dataverse_files
+```
+
 Filter to a single device (combined CSV only):
 
 ```bash
@@ -85,6 +92,7 @@ python scripts/train_aw_fb_tabular.py --csv-path /path/to/aw_fb_data.csv --devic
 Notes:
 - These CSVs contain **tabular, engineered features** (steps, heart rate, calories, distance, entropy/correlation features) and 6 labels: `Lying`, `Sitting`, `Self Pace walk`, and `Running 3/5/7 METs`.
 - There is **no explicit “Standing”** label in these files; for a stand/walk/stairs demo you’ll likely collect wrist IMU data for standing (or treat “stationary” as one class).
+- Summary of key findings (leakage risk under random splits, cross-device shift, suggested label mapping) is in `docs/DATAVERSE_AW_FB_ANALYSIS.md`.
 
 ## Optional: LLM Fine-Tuning (Colab/GPU)
 
@@ -131,6 +139,7 @@ For a ready-to-write ICSR paper outline, figure plan, and results table template
   Note: the dataset README states that **commercial use is prohibited** — please review the dataset license terms before use.
 - **Kaggle mirror (optional)**: `uciml/human-activity-recognition-with-smartphones` (used by the optional LLM script).  
   https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones
+- **Dataverse Apple Watch + Fitbit dataset** (optional, not included): Daniel Fuller (2020), “Replication Data for: Using machine learning methods to predict physical activity types with Apple Watch and Fitbit data using indirect calorimetry as the criterion.” Harvard Dataverse. DOI: https://doi.org/10.7910/DVN/ZS2Z2J (license: CC0 1.0).
 - **Notebook source**: the implementation here is derived from the user-provided notebook stored at `notebooks/Making_the_Most_of_your_Colab_Subscription.ipynb`.
 - **Libraries**: scikit-learn, PyTorch, matplotlib/seaborn, Hugging Face Transformers/TRL/PEFT/Datasets, and Unsloth (for the optional LLM workflow).
 
