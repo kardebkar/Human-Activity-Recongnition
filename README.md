@@ -1,7 +1,5 @@
 # Human Activity Recognition (HAR)
 
-Runnable implementation of the notebook in `notebooks/Making_the_Most_of_your_Colab_Subscription.ipynb`, organized as a small Python project:
-
 - **UCI HAR baseline**: scikit-learn MLP on the canonical 561-feature vectors
 - **PyTorch classifier**: compact “MLP + self-attention” model on the same feature vectors
 - **Optional (GPU/Colab)**: Unsloth/TRL fine-tuning script to map sensor summaries → activity label
