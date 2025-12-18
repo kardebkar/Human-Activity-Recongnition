@@ -15,6 +15,8 @@ Artifacts are written to `data/`, `outputs/`, and `models/` (all `.gitignore`d).
 - `scripts/analyze_aw_fb_dataset.py`: full analysis for Dataverse Apple Watch / Fitbit CSVs (random vs group splits)
 - `scripts/train_activity_model.py`: train MLP or PyTorch model
 - `scripts/predict_activity.py`: run inference with the saved PyTorch model
+- `watch/mac/run_stream_server.py`: receive watch IMU (UDP JSON) and output stabilized activity state
+- `watch/mac/train_imu_model.py`: train a baseline on labeled raw IMU CSV for streaming inference
 
 ## Setup
 
@@ -28,6 +30,20 @@ Optional (only if you want the PyTorch model):
 
 ```bash
 pip install -r requirements-torch.txt
+```
+
+## Smoke Tests
+
+```bash
+# 1) Basic import/compile check
+python -m py_compile $(git ls-files "*.py")
+
+# 2) End-to-end (UCI HAR baseline)
+python scripts/analyze_uci_har.py --download
+
+# 3) Watch streaming path (no UDP; stdin mode)
+python watch/mac/generate_fake_imu.py --samples 200 --sample-rate-hz 50 \
+  | python watch/mac/run_stream_server.py --stdin --sample-rate-hz 50 --window-seconds 2.0 --hop-seconds 0.5
 ```
 
 ## Quick Start (Baseline)
@@ -127,6 +143,27 @@ Position the watch as part of a socially assistive system that improves *when* a
 - **Evaluation beyond accuracy:** trust, workload, perceived usefulness, and failure handling under uncertainty.
 
 For a ready-to-write ICSR paper outline, figure plan, and results table templates, see `docs/ICSR2026_PAPER_BLUEPRINT.md`.
+
+## Apple Watch IMU Streaming → macOS (Raw → Classifier → Stable State)
+
+This repo includes a Mac-side UDP receiver and an offline trainer for **raw IMU streaming** (accelerometer/gyroscope) collected on Apple Watch.
+
+Start here:
+- `docs/watch/IMU_STREAMING.md`
+- `docs/watch/IMU_STREAMING.md`
+
+Typical workflow:
+
+```bash
+# 1) Collect raw samples (from an iPhone relay) to CSV
+python watch/mac/run_stream_server.py --listen-port 5500 --log-raw-csv data/watch_raw.csv
+
+# 2) Train a baseline model (requires a labeled CSV)
+python watch/mac/train_imu_model.py --raw-csv data/watch_raw_labeled.csv --model rf
+
+# 3) Run real-time inference + stabilization
+python watch/mac/run_stream_server.py --listen-port 5500 --model-path models/watch_imu_rf.joblib
+```
 
 ## Credits & Attribution
 
