@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C35E41552EF906CF00A8036E /* Wrist2AvatarStream Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C35E41352EF906CD00A8036E /* Wrist2AvatarStream Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C35E41152EF9059E00A8036E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C35E40FF2EF9059B00A8036E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C35E41062EF9059B00A8036E;
+			remoteInfo = Wrist2AvatarStreamer;
+		};
+		C35E411F2EF9059E00A8036E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C35E40FF2EF9059B00A8036E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C35E41062EF9059B00A8036E;
+			remoteInfo = Wrist2AvatarStreamer;
+		};
+		C35E41422EF906CF00A8036E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C35E40FF2EF9059B00A8036E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C35E41342EF906CD00A8036E;
+			remoteInfo = "Wrist2AvatarStream Watch App";
+		};
+		C35E414C2EF906CF00A8036E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C35E40FF2EF9059B00A8036E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C35E41342EF906CD00A8036E;
+			remoteInfo = "Wrist2AvatarStream Watch App";
+		};
+		C35E41532EF906CF00A8036E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C35E40FF2EF9059B00A8036E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C35E41342EF906CD00A8036E;
+			remoteInfo = "Wrist2AvatarStream Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C35E41592EF906CF00A8036E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C35E41552EF906CF00A8036E /* Wrist2AvatarStream Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C35E41072EF9059B00A8036E /* Wrist2AvatarStreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrist2AvatarStreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35E41142EF9059E00A8036E /* Wrist2AvatarStreamerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wrist2AvatarStreamerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35E411E2EF9059E00A8036E /* Wrist2AvatarStreamerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wrist2AvatarStreamerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35E41352EF906CD00A8036E /* Wrist2AvatarStream Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist2AvatarStream Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35E41412EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wrist2AvatarStream Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35E414B2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wrist2AvatarStream Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C31C68622EFB09C100230873 /* Exceptions for "Wrist2AvatarStreamer" folder in "Wrist2AvatarStream Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ImuTypes.swift,
+			);
+			target = C35E41342EF906CD00A8036E /* Wrist2AvatarStream Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C35E41092EF9059B00A8036E /* Wrist2AvatarStreamer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C31C68622EFB09C100230873 /* Exceptions for "Wrist2AvatarStreamer" folder in "Wrist2AvatarStream Watch App" target */,
+			);
+			path = Wrist2AvatarStreamer;
+			sourceTree = "<group>";
+		};
+		C35E41172EF9059E00A8036E /* Wrist2AvatarStreamerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Wrist2AvatarStreamerTests;
+			sourceTree = "<group>";
+		};
+		C35E41212EF9059E00A8036E /* Wrist2AvatarStreamerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Wrist2AvatarStreamerUITests;
+			sourceTree = "<group>";
+		};
+		C35E41362EF906CD00A8036E /* Wrist2AvatarStream Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Wrist2AvatarStream Watch App";
+			sourceTree = "<group>";
+		};
+		C35E41442EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Wrist2AvatarStream Watch AppTests";
+			sourceTree = "<group>";
+		};
+		C35E414E2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Wrist2AvatarStream Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C35E41042EF9059B00A8036E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41112EF9059E00A8036E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E411B2EF9059E00A8036E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41322EF906CD00A8036E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E413E2EF906CF00A8036E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41482EF906CF00A8036E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C35E40FE2EF9059B00A8036E = {
+			isa = PBXGroup;
+			children = (
+				C35E41092EF9059B00A8036E /* Wrist2AvatarStreamer */,
+				C35E41172EF9059E00A8036E /* Wrist2AvatarStreamerTests */,
+				C35E41212EF9059E00A8036E /* Wrist2AvatarStreamerUITests */,
+				C35E41362EF906CD00A8036E /* Wrist2AvatarStream Watch App */,
+				C35E41442EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests */,
+				C35E414E2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests */,
+				C35E41082EF9059B00A8036E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C35E41082EF9059B00A8036E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C35E41072EF9059B00A8036E /* Wrist2AvatarStreamer.app */,
+				C35E41142EF9059E00A8036E /* Wrist2AvatarStreamerTests.xctest */,
+				C35E411E2EF9059E00A8036E /* Wrist2AvatarStreamerUITests.xctest */,
+				C35E41352EF906CD00A8036E /* Wrist2AvatarStream Watch App.app */,
+				C35E41412EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests.xctest */,
+				C35E414B2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C35E41062EF9059B00A8036E /* Wrist2AvatarStreamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35E41282EF9059E00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStreamer" */;
+			buildPhases = (
+				C35E41032EF9059B00A8036E /* Sources */,
+				C35E41042EF9059B00A8036E /* Frameworks */,
+				C35E41052EF9059B00A8036E /* Resources */,
+				C35E41592EF906CF00A8036E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35E41542EF906CF00A8036E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C35E41092EF9059B00A8036E /* Wrist2AvatarStreamer */,
+			);
+			name = Wrist2AvatarStreamer;
+			packageProductDependencies = (
+			);
+			productName = Wrist2AvatarStreamer;
+			productReference = C35E41072EF9059B00A8036E /* Wrist2AvatarStreamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C35E41132EF9059E00A8036E /* Wrist2AvatarStreamerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35E412B2EF9059E00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStreamerTests" */;
+			buildPhases = (
+				C35E41102EF9059E00A8036E /* Sources */,
+				C35E41112EF9059E00A8036E /* Frameworks */,
+				C35E41122EF9059E00A8036E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35E41162EF9059E00A8036E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C35E41172EF9059E00A8036E /* Wrist2AvatarStreamerTests */,
+			);
+			name = Wrist2AvatarStreamerTests;
+			packageProductDependencies = (
+			);
+			productName = Wrist2AvatarStreamerTests;
+			productReference = C35E41142EF9059E00A8036E /* Wrist2AvatarStreamerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C35E411D2EF9059E00A8036E /* Wrist2AvatarStreamerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35E412E2EF9059E00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStreamerUITests" */;
+			buildPhases = (
+				C35E411A2EF9059E00A8036E /* Sources */,
+				C35E411B2EF9059E00A8036E /* Frameworks */,
+				C35E411C2EF9059E00A8036E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35E41202EF9059E00A8036E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C35E41212EF9059E00A8036E /* Wrist2AvatarStreamerUITests */,
+			);
+			name = Wrist2AvatarStreamerUITests;
+			packageProductDependencies = (
+			);
+			productName = Wrist2AvatarStreamerUITests;
+			productReference = C35E411E2EF9059E00A8036E /* Wrist2AvatarStreamerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C35E41342EF906CD00A8036E /* Wrist2AvatarStream Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35E41562EF906CF00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStream Watch App" */;
+			buildPhases = (
+				C35E41312EF906CD00A8036E /* Sources */,
+				C35E41322EF906CD00A8036E /* Frameworks */,
+				C35E41332EF906CD00A8036E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C35E41362EF906CD00A8036E /* Wrist2AvatarStream Watch App */,
+			);
+			name = "Wrist2AvatarStream Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Wrist2AvatarStream Watch App";
+			productReference = C35E41352EF906CD00A8036E /* Wrist2AvatarStream Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C35E41402EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35E415A2EF906CF00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStream Watch AppTests" */;
+			buildPhases = (
+				C35E413D2EF906CF00A8036E /* Sources */,
+				C35E413E2EF906CF00A8036E /* Frameworks */,
+				C35E413F2EF906CF00A8036E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35E41432EF906CF00A8036E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C35E41442EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests */,
+			);
+			name = "Wrist2AvatarStream Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Wrist2AvatarStream Watch AppTests";
+			productReference = C35E41412EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C35E414A2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35E415D2EF906CF00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStream Watch AppUITests" */;
+			buildPhases = (
+				C35E41472EF906CF00A8036E /* Sources */,
+				C35E41482EF906CF00A8036E /* Frameworks */,
+				C35E41492EF906CF00A8036E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35E414D2EF906CF00A8036E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C35E414E2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests */,
+			);
+			name = "Wrist2AvatarStream Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Wrist2AvatarStream Watch AppUITests";
+			productReference = C35E414B2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C35E40FF2EF9059B00A8036E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					C35E41062EF9059B00A8036E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C35E41132EF9059E00A8036E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C35E41062EF9059B00A8036E;
+					};
+					C35E411D2EF9059E00A8036E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C35E41062EF9059B00A8036E;
+					};
+					C35E41342EF906CD00A8036E = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C35E41402EF906CF00A8036E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C35E41342EF906CD00A8036E;
+					};
+					C35E414A2EF906CF00A8036E = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = C35E41342EF906CD00A8036E;
+					};
+				};
+			};
+			buildConfigurationList = C35E41022EF9059B00A8036E /* Build configuration list for PBXProject "Wrist2AvatarStreamer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C35E40FE2EF9059B00A8036E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C35E41082EF9059B00A8036E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35E41062EF9059B00A8036E /* Wrist2AvatarStreamer */,
+				C35E41132EF9059E00A8036E /* Wrist2AvatarStreamerTests */,
+				C35E411D2EF9059E00A8036E /* Wrist2AvatarStreamerUITests */,
+				C35E41342EF906CD00A8036E /* Wrist2AvatarStream Watch App */,
+				C35E41402EF906CF00A8036E /* Wrist2AvatarStream Watch AppTests */,
+				C35E414A2EF906CF00A8036E /* Wrist2AvatarStream Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C35E41052EF9059B00A8036E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41122EF9059E00A8036E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E411C2EF9059E00A8036E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41332EF906CD00A8036E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E413F2EF906CF00A8036E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41492EF906CF00A8036E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C35E41032EF9059B00A8036E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41102EF9059E00A8036E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E411A2EF9059E00A8036E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41312EF906CD00A8036E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E413D2EF906CF00A8036E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35E41472EF906CF00A8036E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C35E41162EF9059E00A8036E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C35E41062EF9059B00A8036E /* Wrist2AvatarStreamer */;
+			targetProxy = C35E41152EF9059E00A8036E /* PBXContainerItemProxy */;
+		};
+		C35E41202EF9059E00A8036E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C35E41062EF9059B00A8036E /* Wrist2AvatarStreamer */;
+			targetProxy = C35E411F2EF9059E00A8036E /* PBXContainerItemProxy */;
+		};
+		C35E41432EF906CF00A8036E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C35E41342EF906CD00A8036E /* Wrist2AvatarStream Watch App */;
+			targetProxy = C35E41422EF906CF00A8036E /* PBXContainerItemProxy */;
+		};
+		C35E414D2EF906CF00A8036E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C35E41342EF906CD00A8036E /* Wrist2AvatarStream Watch App */;
+			targetProxy = C35E414C2EF906CF00A8036E /* PBXContainerItemProxy */;
+		};
+		C35E41542EF906CF00A8036E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C35E41342EF906CD00A8036E /* Wrist2AvatarStream Watch App */;
+			targetProxy = C35E41532EF906CF00A8036E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C35E41262EF9059E00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C35E41272EF9059E00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C35E41292EF9059E00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89582CD66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C35E412A2EF9059E00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89582CD66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C35E412C2EF9059E00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wrist2AvatarStreamer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wrist2AvatarStreamer";
+			};
+			name = Debug;
+		};
+		C35E412D2EF9059E00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wrist2AvatarStreamer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wrist2AvatarStreamer";
+			};
+			name = Release;
+		};
+		C35E412F2EF9059E00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wrist2AvatarStreamer;
+			};
+			name = Debug;
+		};
+		C35E41302EF9059E00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wrist2AvatarStreamer;
+			};
+			name = Release;
+		};
+		C35E41572EF906CF00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89582CD66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wrist2AvatarStream;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Wrist2AvatarStreamer.Wrist2AvatarStreamer;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		C35E41582EF906CF00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X89582CD66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Wrist2AvatarStream;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Wrist2AvatarStreamer.Wrist2AvatarStreamer;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wrist2AvatarStreamer.Wrist2AvatarStreamer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		C35E415B2EF906CF00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wrist2AvatarStreamer.Wrist2AvatarStream-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wrist2AvatarStream Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wrist2AvatarStream Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		C35E415C2EF906CF00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wrist2AvatarStreamer.Wrist2AvatarStream-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wrist2AvatarStream Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wrist2AvatarStream Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		C35E415E2EF906CF00A8036E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wrist2AvatarStreamer.Wrist2AvatarStream-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Wrist2AvatarStream Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		C35E415F2EF906CF00A8036E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wrist2AvatarStreamer.Wrist2AvatarStream-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Wrist2AvatarStream Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C35E41022EF9059B00A8036E /* Build configuration list for PBXProject "Wrist2AvatarStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E41262EF9059E00A8036E /* Debug */,
+				C35E41272EF9059E00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35E41282EF9059E00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E41292EF9059E00A8036E /* Debug */,
+				C35E412A2EF9059E00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35E412B2EF9059E00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStreamerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E412C2EF9059E00A8036E /* Debug */,
+				C35E412D2EF9059E00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35E412E2EF9059E00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStreamerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E412F2EF9059E00A8036E /* Debug */,
+				C35E41302EF9059E00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35E41562EF906CF00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStream Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E41572EF906CF00A8036E /* Debug */,
+				C35E41582EF906CF00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35E415A2EF906CF00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStream Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E415B2EF906CF00A8036E /* Debug */,
+				C35E415C2EF906CF00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35E415D2EF906CF00A8036E /* Build configuration list for PBXNativeTarget "Wrist2AvatarStream Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35E415E2EF906CF00A8036E /* Debug */,
+				C35E415F2EF906CF00A8036E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C35E40FF2EF9059B00A8036E /* Project object */;
+}

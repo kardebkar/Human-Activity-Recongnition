@@ -150,7 +150,30 @@ This repo includes a Mac-side UDP receiver and an offline trainer for **raw IMU 
 
 Start here:
 - `docs/watch/IMU_STREAMING.md`
-- `docs/watch/IMU_STREAMING.md`
+- `watch/apple/SETUP_XCODE.md` (Apple Watch + iPhone relay scaffold)
+
+End-to-end (Watch → iPhone → Mac):
+
+1) Mac (receiver; keep running):
+
+```bash
+source .venv/bin/activate
+python watch/mac/run_stream_server.py --listen-port 5500 --log-raw-csv data/watch_raw.csv
+```
+
+2) Find your Mac’s LAN IP (use this in the iPhone app; **not** `localhost`):
+
+```bash
+ipconfig getifaddr en0
+```
+
+3) Xcode:
+- Run the **iOS app on a real iPhone**, enter Mac IP + port `5500`, tap **Start Relay** (allow Local Network permission).
+- Run the **watch app on a real Watch**, tap **Start**.
+
+Notes:
+- `WCSession.isReachable` requires the counterpart app to be active (keep the iPhone app foreground/unlocked for watch→phone; keep the watch app open for phone→watch label/commands).
+- This repo does **not** commit an `.xcodeproj`; the Swift scaffold lives in `watch/apple/` and is meant to be added to your own Xcode project.
 
 Typical workflow:
 

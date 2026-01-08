@@ -92,6 +92,15 @@ Pseudo-outline:
 
 Practical tip: batch samples before sending over WatchConnectivity to avoid message overhead.
 
+## Swift Scaffold (This Repo)
+
+For a copy/paste scaffold you can drop into an Xcode “iOS app + Watch app” template, see:
+
+- `watch/apple/README.md`
+- `watch/apple/SETUP_XCODE.md`
+- `watch/apple/watchos/WatchImuStreamer.swift`
+- `watch/apple/ios/MacUdpRelay.swift`
+
 ## Install + Smoke Test (No Watch Required)
 
 Install Python deps (from repo root):
