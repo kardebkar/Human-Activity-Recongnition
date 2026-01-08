@@ -1,10 +1,48 @@
-# Human Activity Recognition (HAR)
+# Wrist2Avatar: Apple Watch IMU Streaming + Activity Recognition
 
-- **UCI HAR baseline**: scikit-learn MLP on the canonical 561-feature vectors
+Main idea: stream **raw wrist IMU** (accelerometer + gyroscope) from Apple Watch to macOS (via an iPhone relay), log labeled CSV, train a baseline model, and run **real-time classification + state stabilization** (for driving an avatar / adaptive UX later).
+
+**Architecture**
+
+Apple Watch (CoreMotion) → WatchConnectivity → iPhone (UDP relay) → Mac (Python receiver/classifier) → (optional Unity/avatar)
+
+## TL;DR (Run the Stream)
+
+1) Install Python deps:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+2) Start the Mac receiver (keep running):
+
+```bash
+python watch/mac/run_stream_server.py --listen-port 5500 --log-raw-csv data/watch_raw.csv
+```
+
+3) Find your Mac’s LAN IP (use this in the iPhone app; **not** `localhost`):
+
+```bash
+ipconfig getifaddr en0
+```
+
+4) Open the Xcode project: `watch/xcode/Wrist2AvatarStreamer/Wrist2AvatarStreamer.xcodeproj`
+   - Or create your own project using `watch/apple/SETUP_XCODE.md`
+
+5) Run in Xcode (real devices recommended):
+   - Run the **iOS app** on a real iPhone → enter Mac IP + port `5500` → **Start Relay** (allow Local Network permission).
+   - Run the **watch app** on a real Apple Watch → **Start**.
+
+Notes:
+- Real-time WatchConnectivity (`WCSession.isReachable`) requires the counterpart app to be active (keep the iPhone app foreground/unlocked for watch→phone; keep the watch app open for phone→watch label/commands).
+- Streaming artifacts are written to `data/`, `outputs/`, and `models/` (all `.gitignore`d).
+
+Also included (secondary):
+- **UCI HAR baseline**: scikit-learn MLP on canonical 561-feature vectors
 - **PyTorch classifier**: compact “MLP + self-attention” model on the same feature vectors
 - **Optional (GPU/Colab)**: Unsloth/TRL fine-tuning script to map sensor summaries → activity label
-
-Artifacts are written to `data/`, `outputs/`, and `models/` (all `.gitignore`d).
 
 ## What’s In Here
 
@@ -36,14 +74,14 @@ pip install -r requirements-torch.txt
 
 ```bash
 # 1) Basic import/compile check
-python -m py_compile $(git ls-files "*.py")
+python3 -m py_compile $(git ls-files "*.py")
 
 # 2) End-to-end (UCI HAR baseline)
-python scripts/analyze_uci_har.py --download
+python3 scripts/analyze_uci_har.py --download
 
 # 3) Watch streaming path (no UDP; stdin mode)
-python watch/mac/generate_fake_imu.py --samples 200 --sample-rate-hz 50 \
-  | python watch/mac/run_stream_server.py --stdin --sample-rate-hz 50 --window-seconds 2.0 --hop-seconds 0.5
+python3 watch/mac/generate_fake_imu.py --samples 200 --sample-rate-hz 50 \
+  | python3 watch/mac/run_stream_server.py --stdin --sample-rate-hz 50 --window-seconds 2.0 --hop-seconds 0.5
 ```
 
 ## Quick Start (Baseline)
@@ -173,7 +211,7 @@ ipconfig getifaddr en0
 
 Notes:
 - `WCSession.isReachable` requires the counterpart app to be active (keep the iPhone app foreground/unlocked for watch→phone; keep the watch app open for phone→watch label/commands).
-- This repo does **not** commit an `.xcodeproj`; the Swift scaffold lives in `watch/apple/` and is meant to be added to your own Xcode project.
+- A working sample Xcode project is included at `watch/xcode/Wrist2AvatarStreamer/Wrist2AvatarStreamer.xcodeproj`. The drop-in Swift scaffold also lives in `watch/apple/` if you want to integrate into your own app.
 
 Typical workflow:
 

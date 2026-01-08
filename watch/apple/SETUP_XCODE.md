@@ -1,6 +1,6 @@
 # Xcode Setup (iOS + watchOS) — Raw IMU Streaming
 
-This repo does not commit an `.xcodeproj`. Instead, create the project in Xcode and add the Swift files from `watch/apple/`.
+This repo includes a working `.xcodeproj` example under `watch/xcode/`, and also provides a drop-in Swift scaffold under `watch/apple/` if you prefer to create your own project.
 
 If you prefer to start from a working example project (already set up with iOS + watch targets), open:
 - `watch/xcode/Wrist2AvatarStreamer/Wrist2AvatarStreamer.xcodeproj`
